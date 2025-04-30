@@ -2,16 +2,19 @@
 {
     static void Main()
     {
+        int contador = 2;
+
         Console.WriteLine("escreva um número:");
         int num = int.Parse(Console.ReadLine());
 
-        int contador = 2;
+        
         while (contador <= num)
-        {
-
-            Console.WriteLine(num);
-            num = num % 2 == 0;
-            
+        { 
+            if (contador % 2 == 0)
+            {
+                Console.WriteLine(contador);
+            }
+            contador = contador + 1;
         }
     }
 }
